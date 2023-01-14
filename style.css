@@ -131,6 +131,16 @@ text-align: center;
 .sponsors-image img{
     margin-left: 50px;
 }
+.interesting{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+.interesting-title{
+    text-align: center;
+    margin-top: 130px;
+}
 
 footer {
     padding: 23px 0;
