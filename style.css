@@ -117,6 +117,14 @@ text-align: center;
    
     text-align: center;
     padding-top: 70px;
+
+    
+}
+.fact:hover{
+    transition: width 3s linear;
+    transform: rotate(5deg);
+    width: 450px;
+   
 }
 .sponsors-text{
     text-align: center;
