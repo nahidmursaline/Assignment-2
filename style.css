@@ -1,11 +1,16 @@
+/* google font  */
+
 *{
     font-family: 'Work Sans', sans-serif;
 }
+
+/* nav section style  */
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 50px 240px;
+    margin: 10px 200px;
     align-items: center;
+
 }
 
 .nav-title{
@@ -20,6 +25,10 @@ nav ul li{
     margin-left: 20px;
     color: #424242;
 }
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding-bottom: 30px;
+}
 .brand-new-container{
   text-align: center;
 }
@@ -29,9 +38,15 @@ nav ul li{
     font-weight: 700;
     font-size: 64px;
 }
-.brand-new-description{
+.description-color{
     color: #727272;
 }
+.list-title-color{
+    color: #FF900E;
+}
+
+/* all button style  */
+
 button{
     color: white;
     width: 180px;
@@ -62,10 +77,16 @@ button{
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
+
+/* centering style  */
+
 .center{
     margin: auto;
     width: 75%;
 }
+
+/* articles sectio style  */
+
 .features-article{
     display: flex;
     margin-top: 130px;
@@ -82,6 +103,9 @@ button{
 }
 .article-description{
     color: #727272;
+}
+.some-facts{
+    margin-top: 80px;
 }
 .experience-button{
     width: 242px;
@@ -100,9 +124,7 @@ text-align: center;
     top: -130px;
    
 }
-.some-facts{
-    margin-left: 240px;
-}
+
 .facts{
     display: flex;
     margin-top: 100px;
@@ -113,7 +135,7 @@ text-align: center;
     #FF900E;
     width: 300px;
     height: 180px;
-    margin-left: 60px;
+    margin: 10px;
    
     text-align: center;
     padding-top: 70px;
@@ -126,6 +148,9 @@ text-align: center;
     width: 450px;
    
 }
+
+/* sponsors section style  */
+
 .sponsors-text{
     text-align: center;
     margin-top: 130px;
@@ -150,6 +175,7 @@ text-align: center;
     margin-top: 130px;
 }
 
+/* footer style  */
 footer {
     padding: 23px 0;
     border: 3px solid 
@@ -161,4 +187,46 @@ footer {
 }
 .footer-class{
     margin-top: 130px;
+}
+
+
+/* Responsive section by using media query  */
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+        
+    }
+    .head-image img{
+        width: 100%;
+    }
+    .features-container{
+        flex-direction: column;
+
+    }
+    .image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-article{
+        flex-direction: column;
+
+    }
+    .features-article-image img{
+        width: 100%;
+    }
+    .some-facts{
+        margin-top: 0;
+    }
+    .facts{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sponsors-image{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .interesting{
+        flex-direction: column;
+    }
+    
 }
